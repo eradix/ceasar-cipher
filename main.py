@@ -1,5 +1,5 @@
 from art import logo
-from caesar_cipher import ceasars, get_user_choice, get_ceasar_cipher_data
+from caesar_cipher import ceasars, get_user_choice, get_ceasar_cipher_data, clean
 
 if __name__ == '__main__':
 
@@ -20,4 +20,11 @@ if __name__ == '__main__':
 
         # get user decision to continue app
         if get_user_choice() == False:
+            print('Program terminated.')
+            print()
             to_continue = False
+        else:
+            #clear the console screen
+            clean()
+
+        

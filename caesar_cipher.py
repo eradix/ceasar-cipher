@@ -1,3 +1,5 @@
+import os
+
 # list of alphabets
 alphabet = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
@@ -69,4 +71,13 @@ def get_ceasar_cipher_data():
    }
 
 
+'''We define our own clean function to clear the screen'''
+def clean():
+    # For Windows
+    if os.name == 'nt':
+        os.system('cls')
+
+    # For macOS and Linux
+    else:
+        os.system('clear')
 
